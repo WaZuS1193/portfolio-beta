@@ -1,0 +1,73 @@
+/* ************ ******* *** Mixin Section *** ******* ************ */
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// MEDIA QUERY MANAGER 
+/*
+
+000 - 320px:    Mini Screen
+320 - 600px:    Phone
+
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+
+1200 - 1800px:  Normal styles apply
+
+1800px + :      Big desktop
+
+*/
+
+/*
+$breakpoint arguement choices
+-- mini-screen
+-- phone
+-- tab-port
+-- tab-land
+-- big-desktop
+
+1em = 16px
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+put the media query logics reversed for apply the latest properties
+*/
+
+@mixin respond($breakpoint) {
+
+  @if $breakpoint == mini-screen {
+    @media (max-width: 20em) { @content };      // 320px   
+  }
+
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) { @content };      // 600px   
+  }
+
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) { @content };     // 900px    
+  }
+
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) { @content };        // 1200px
+  }
+
+  @if $breakpoint == big-tab-land {
+    @media (max-width: 108.75em) { @content };    // 1740px
+  }
+
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) { @content };     // 1800px
+  }
+}

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+  
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #d9dfee;
+    overflow-x: hidden;
+}
+
+/* ************ ******* *** Navigation Bar Section *** ******* ************ */
+
+
+/* ************ ******* *** Header Section *** ******* ************ */
+
+
+
+/* ************ ******* *** Containers Section *** ******* ************ */
+
+
+
+/* ************ ******* *** About Sector *** ******* ************ */
+
+
+
+
+/* ************ ******* *** Experience Sector *** ******* ************ */
+
+
+
+
+/* ************ ******* *** Social Sector *** ******* ************ */
+
+
+
+/* ************ ******* *** Footer Section *** ******* ************ */
+
+
+/* colors #CAD1E3 != #010818, #67779F != #0B1C45  */
+
+    /* clip-path: polygon(0 0, 40% 0, 60% 100%, 0 100%); */
+    /* -webkit-clip-path: polygon(0 0, 40% 0, 60% 100%, 0 100%); */
+
+    /* clip-path: polygon(0 20%, 100% 10%, 100% 80%, 0 90%); */
+    /* -webkit-clip-path: polygon(0 20%, 100% 10%, 100% 80%, 0 90%);

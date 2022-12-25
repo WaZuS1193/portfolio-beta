@@ -1,0 +1,30 @@
+/* ************ ******* *** Contact Section *** ******* ************ */
+.contact {
+  display: flex;
+  justify-content: center;
+  &__container {
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+
+    border-top: 1rem dotted rgba($color-blue-dark-2, .2);
+    
+    padding: 3rem 0;
+
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-blue-light-2;
+
+    &:hover {
+      cursor: pointer;
+      color: $color-blue-light-1;
+    }
+
+  }
+  &__icon {
+    font-size: 4.5rem;
+    margin: 3.5rem 2.5rem;
+  }
+}

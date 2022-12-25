@@ -1,0 +1,134 @@
+/* ************ ******* *** Navigation Bar Section *** ******* ************ */
+.nav {
+  background-color: $color-blue-dark-2;
+
+  display: flex;
+  position: fixed;
+  z-index: 3;
+  
+  width: 100vw;
+  height: 6rem;
+
+  padding: 0% 10%;
+  letter-spacing: .5rem;
+  
+  &__brand {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: $color-white;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 auto;
+ 
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+
+    &:hover {
+      color: $color-green-simple-0;
+      background-color: $color-blue-dark-1;
+      border-bottom: .3rem solid $color-green-simple-0;
+    }
+
+  }
+
+  &__link {
+    color: $color-grey-light-0;
+    width: 15rem;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-green-simple-0;
+    }
+
+  }
+
+  &__drop {
+    display: none;
+    align-items: center;
+  
+    padding: 0 1rem 0 1.5rem;
+  
+    color: $color-white;
+    text-decoration: none;
+  
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+
+    &:hover {
+      
+      color: $color-green-simple-0;
+      background-color: $color-blue-dark-1;
+      border-bottom: .3rem solid $color-green-simple-0;
+    }
+
+  }
+
+
+    
+}
+
+@media(max-width: 1200px) {
+
+  .nav {
+    padding: 0 1.5rem;
+
+    &__brand {
+      padding-left: 1rem;
+    }
+
+    &__drop {
+      display: flex;
+      margin: 0 0 0 auto;
+      height: 100%;
+    }
+  
+    &__list {
+      display: block;
+      position: fixed;
+      z-index: 3;
+      
+      left: -100%;
+      margin-top: 0;
+      top: 6rem;            /* height of navigation bar = 6rem */
+      flex-direction: column;
+      background-color: #191d2b;
+      width: 100%;
+      text-align: center;
+      transition: .3s;
+    }
+  
+    &__item {
+      padding:1rem 0;
+    }
+  
+    &__list.active {
+      left: 0;
+    }
+  
+    &__link {
+      width: 100%;
+    }
+  }
+
+  
+}
+
+

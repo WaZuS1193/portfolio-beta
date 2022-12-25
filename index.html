@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap and CSS only -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- CDN Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+    <nav class="nav" id="navigation">
+        <a class="nav__brand" href="#">AK_11</a>
+        <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#header">Home</a></li>
+            <li class="nav__item"><a class="nav__link" href="#about-me">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="#social-contact">Contact</a></li>
+        </ul>
+        <a href="#navigation" class="nav__drop">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <header class="header" id="header">
+        <div class="header__avatar">
+            <img class="header__profile-avatar" src="img/cartoonify.png" alt="avatar-image">
+        </div>
+        <div class="header__greetings">
+            <h2 class="header__greetings-title">Greetings</h2>
+            <p class="header__greetings-text">
+                Welcome, My name is <strong>Abdelali Khaldi</strong> and I'm a Junior <strong>"Full Stack Web Developer"</strong>
+            </p>
+        </div>
+
+        <div class="header__button">
+            <a href="/resume.html" class="header__btn btn">
+                View Resume
+                <i class="fa-solid fa-file"></i>
+            </a>
+
+            <a href="#" class="header__btn btn">
+                Downlaod Resume
+                <i class="fa-solid fa-file-zipper"></i>
+            </a>
+        </div>    
+    </header>
+
+    <section class="about section container-fluid" id="about-me">
+        <div class="about__container">
+
+                <h2 class="about__heading">How am I ?</h2>
+                
+                <p class="about__paragraph">
+                    A Full Stack Web Developer Junior,
+                    I finished my course recently, and I want to practice
+                    my learned skills, and build some great websites.
+                    <br>
+                    Besides programming, I love video games, sports and drinking tea.
+                </p>
+    
+                <h2 class="about__heading">
+                    I'm currently learning . . .
+                </h2>
+                <ul class="about__list">
+                    <li>Web 3 and Blockchains</li>
+                    <li>Python programing language</li>
+                    <li>Linux OS</li>
+                    <li>Cybersecurity</li>
+                </ul>
+
+        </div>
+    </section>
+
+    <section class="feature section container-fluid" id="my-exp">
+
+            <div class="feature__main-title">
+                <h2>My Skills</h2>
+            </div>
+
+            <div class="feature__skills">
+
+                <div class="feature__sec-title">    
+                    
+                    <div class="feature__container">
+                        <h3 class="feature__title">Front-End</h3>
+                        <div class="feature__circular-progress circle-1">
+                          <span class="feature__progress-value">66.67%</span>
+                        </div>
+                    </div>
+
+                    <ul class="feature__list">
+                        <!-- <li class="feature__item"><i class="fa-brands fa-html5"></i>HTML5</li> -->
+                        <li class="feature__item">HTML5 <p class="feature__value">90%</p><span class="feature__bar"><span class="feature__html"></span></span></li>
+                        <li class="feature__item">CSS <p class="feature__value">80%</p><span class="feature__bar"><span class="feature__css"></span></span></li>
+                        <li class="feature__item">Bootstrap <p class="feature__value">70%</p><span class="feature__bar"><span class="feature__bootstrap"></span></span></li>
+                        <li class="feature__item">JavaScript <p class="feature__value">60%</p><span class="feature__bar"><span class="feature__javascript"></span></span></li>    
+                        <li class="feature__item">DOM <p class="feature__value">55%</p><span class="feature__bar"><span class="feature__dom"></span></span></li>
+                        <li class="feature__item">jQuery <p class="feature__value">45%</p><span class="feature__bar"><span class="feature__jquery"></span></span></li>
+                    </ul>
+                </div>
+
+                <br>
+
+                <div class="feature__sec-title">    
+                    
+                    <div class="feature__container">
+                        <h3 class="feature__title">Back-End</h3>
+                        <div class="feature__circular-progress circle-2">
+                          <span class="feature__progress-value">59.28%</span>
+                        </div>
+                    </div>
+
+                    <ul class="feature__list">
+                        <!-- <li class="feature__item"><i class="fa-brands fa-html5"></i>HTML5</li> -->
+                        <li class="feature__item">Node&Express.js <p class="feature__value">70%</p><span class="feature__bar"><span class="feature__node"></span></span></li>
+                        <li class="feature__item">API's <p class="feature__value">60%</p><span class="feature__bar"><span class="feature__api"></span></span></li>
+                        <li class="feature__item">Git&Github <p class="feature__value">65%</p><span class="feature__bar"><span class="feature__git"></span></span></li>
+                        <li class="feature__item">EJS <p class="feature__value">75%</p><span class="feature__bar"><span class="feature__ejs"></span></span></li>
+                        <li class="feature__item">DataBases <p class="feature__value">50%</p><span class="feature__bar"><span class="feature__db"></span></span></li>
+                        <li class="feature__item">Auth&Security <p class="feature__value">40%</p><span class="feature__bar"><span class="feature__auth"></span></span></li>
+                        <li class="feature__item">React.js <p class="feature__value">55%</p><span class="feature__bar"><span class="feature__react"></span></span></li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <br>
+            
+            <div class="feature__sum-title">
+                <h2>Total</h2>
+                <h3 class="feature__title">Full-Stack</h3>
+                <div class="feature__circular-progress circle-3">
+                    <span class="feature__progress-value">62.97%</span>
+                </div>
+            </div>
+            
+    </section>
+    <section class="contact section container-fluid" id="social-contact">
+
+        <div class="contact__container">
+            <a class="contact__link" href="#">
+                <i class="fa-brands fa-facebook contact__icon"></i>
+            </a> 
+            
+            <a class="contact__link" href="#">
+                <i class="fa-brands fa-twitter contact__icon"></i>
+            </a>
+            
+            <a class="contact__link" href="#">
+                <i class="fa-brands fa-linkedin contact__icon"></i>
+            </a>
+        </div>
+
+    </section>
+
+   
+
+
+    <footer class="footer">
+
+        <section class="form section container-fluid" id="forms-contact">
+        
+            <form class="form__form" action="#">
+    
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="Full name" id="name" required>
+                    <label for="name" class="form__label"></label>
+                </div>
+    
+                <div class="form__group">
+                    <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                    <label for="email" class="form__label"></label>
+                </div>
+    
+                <div class="form__group">
+                    <textarea type="text" class="form__area" id="form__area" maxlength="700" placeholder="Your message" required></textarea>
+                    <label for="text" class="form__label"></label>
+                </div>
+    
+                <div class="form__group">
+                    <button type="button" name="submit" class="form__submit" placeholder="Enter a message..." id="submit">Submit</button>
+                </div>
+    
+            </form>
+
+            
+        </section>
+        
+        <p class="footer__copy">Copyright &copy; 2022</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

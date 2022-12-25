@@ -1,0 +1,15 @@
+/* ************ ******* *** Footer Section *** ******* ************ */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: $color-blue-dark-2;
+  
+  padding: 5rem 0;
+
+  &__copy {
+    color: $color-white;
+  }
+}

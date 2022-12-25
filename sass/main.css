@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* ***** *** ** Animation: Setting a keyframes ** *** ***** */
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes showIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  background-color: #d9dfee;
+  overflow-x: hidden;
+  box-sizing: border-box; }
+
+/* ************ ******* *** Button Section *** ******* ************ */
+.btn {
+  color: #000;
+  font-size: 3.5rem;
+  font-weight: 700;
+  background-color: rgba(157, 185, 237, 0.6);
+  border-radius: 5rem; }
+  .btn, .btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 2rem 3rem;
+    display: inline-block;
+    animation: moveInBottom .8s ease .7s; }
+  .btn:hover {
+    background-color: rgba(69, 192, 114, 0.7);
+    transform: translateY(-3px); }
+  .btn:active {
+    transform: translate(-1px); }
+
+/* ************ ******* *** Header Section *** ******* ************ */
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(5, 255, 151, 0.5), rgba(40, 180, 133, 0.5)), url(/img/frontendcode.jpg);
+  background-size: cover;
+  padding: 0px 7%;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+.profile-avatar {
+  transform: translateY(-60%);
+  height: 200px;
+  width: 200px;
+  background-color: rgba(157, 185, 237, 0.6);
+  border-radius: 50%; }
+
+.avatar {
+  margin-bottom: 6rem;
+  animation: moveInTop 1s ease-in-out .7s;
+  animation-fill-mode: backwards; }
+
+.greetings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 80vw;
+  height: 25%;
+  transform: translateY(-40%);
+  background-color: rgba(157, 185, 237, 0.6);
+  border-radius: 3rem;
+  animation: showIn;
+  animation-duration: 2s;
+  animation-timing-function: ease; }
+  .greetings-title {
+    font-family: "Muli", sans-serif;
+    font-size: xxx-large;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    animation-name: moveInLeft;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-out; }
+  .greetings-text {
+    font-size: xx-large;
+    font-style: italic;
+    animation-name: moveInRight;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-out; }
+
+/* ************ ******* *** Navigation Bar Section *** ******* ************ */
+.nav {
+  background-color: #191d2b;
+  display: flex;
+  height: 6rem;
+  padding: 0% 7%;
+  letter-spacing: .5rem; }
+  .nav-brand {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: #fff; }
+    .nav-brand:hover {
+      color: #fff; }
+  .nav-list {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 auto; }
+  .nav-list-item {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 100%; }
+    .nav-list-item a {
+      color: #f7f7f7;
+      width: 15rem;
+      text-align: center; }
+    .nav-list-item:hover {
+      color: #fff;
+      background-color: #1c3369;
+      border-bottom: 0.3rem solid #05ff97; }
+  .nav a {
+    text-decoration: none; }

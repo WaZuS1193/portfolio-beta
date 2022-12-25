@@ -1,0 +1,22 @@
+/* ************ ******* *** Main SCSS (importer) *** ******* ************ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+ 
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animation";
+@import "base/base";
+
+@import "components/buttons";
+
+
+@import "layout/about";
+@import "layout/contact";
+@import "layout/feature";
+@import "layout/footer";
+@import "layout/form";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
+
+@import "pages/home";

@@ -1,0 +1,48 @@
+/* ************ ******* *** Base Section *** ******* ************ */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  background-color: #b5bcca;
+  overflow-x: hidden;
+  box-sizing: border-box;
+
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+
+  @include respond (tab-land) {
+    font-size: 2rem;
+  }
+
+  @include respond (tab-port) {
+    font-size: 1.6rem;
+  }
+}
+
+// @media (max-width: 1200px) {
+//   body {  
+//     font-size: 1.6rem;
+//   }
+// }
+
+
+// {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+
+//   font-size: 1.2em;
+  
+// }

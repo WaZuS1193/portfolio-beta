@@ -1,0 +1,78 @@
+/* ***** *** ** Animation: Setting a keyframes ** *** ***** */
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem);
+  }
+
+  // 50% {
+  //   opacity: .7;
+  //   transform: translate(0);
+  // }
+
+  // 80% {
+  //   opacity: .9;
+  //   transform: translateY(-2rem);
+  // }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+  
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+  
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+  
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+  
+}
+
+@keyframes showIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+  
+}

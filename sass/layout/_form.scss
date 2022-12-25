@@ -1,0 +1,128 @@
+/* ************ ******* *** Form Section *** ******* ************ */
+#forms-contact {
+  margin: 3rem;
+}
+
+.form {
+
+  display: flex;
+  justify-content: center;
+  
+
+  &__input {
+    display: block;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1.5rem;
+    background-color: rgba($color-white, .5);
+    
+    margin: 3rem 0;
+    padding: 1.5rem 2rem;
+
+    border: none;
+    border-radius: .2rem;
+    border-bottom:3px solid transparent;
+
+    width: 40vw;
+    
+    transition: all .3s;
+
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-black, .1);
+      
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid $color-orange-dark-1;
+    }
+
+    &:focus:valid {
+      border-bottom: 3px solid $color-green-simple-0;
+    }
+  }
+
+  &__area {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    background-color: rgba($color-white, .5);
+
+    margin: .5rem 0;
+    padding: 1.5rem 2rem;
+
+    border: none;
+    border-radius: .2rem;
+    border-bottom:3px solid transparent;
+
+    height: 30vh;
+    width: 40vw;
+    font-weight: 400;
+
+    transition: all .3s;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-black, .1);
+
+      // background-color: #E8F0FE;
+      background-color: $color-grey-light-1;
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid $color-orange-dark-1;
+    }
+
+    &:focus:valid {
+      border-bottom: 3px solid $color-green-simple-0;
+    }
+  }
+
+  &__submit {
+    display:inline-block;
+    background-color: rgba($color-blue-grey-1, .5);
+
+    border: none;
+    border-radius:2px;
+    
+    cursor:pointer;
+    color: $color-blue-dark-2;
+
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    margin: .5rem 0;
+    padding:14px 37px;
+
+    width: 40vw;
+
+    transition: all .2s;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-blue-light-1;
+
+    }
+
+    &:active {
+      transform: scale(.98);
+    }
+  }
+
+  &__group > * {
+
+    @include respond (big-tab-land) {
+      width: 50vw;
+    }
+
+    @include respond (tab-land) {
+      width: 90vw;
+    }
+
+    @include respond (phone) {
+      width: 95vw;
+    }
+  }
+}

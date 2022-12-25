@@ -1,0 +1,250 @@
+/* ************ ******* *** Feature Section *** ******* ************ */
+.feature {
+  margin: 3% 6%;
+
+  &__main-title {
+    margin: auto;
+    text-align: center;
+    
+
+    font-size: 3rem;
+    font-weight: 700;
+
+    margin-top: 10rem;
+    padding-top: 10rem;
+
+    border-top: 1rem dotted rgba($color-blue-dark-2, .2);
+    width: 40vw;
+
+    & :first-child {
+      color: $color-blue-light-2;
+      text-transform: uppercase;
+      text-decoration: underline $color-blue-light-2;
+    }
+
+    @include respond (phone) {
+      font-size: 2rem;
+    }
+
+    @include respond (mini-screen) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+
+    color: $color-blue-dark-2;
+    margin: 0 0 3rem 0;
+
+    @include respond (phone) {
+      font-size: 2.1rem;
+    }
+  }
+
+  &__sec-title {
+    display: flex;
+    align-items: center;
+    
+    
+    &:not(:last-child) {
+      border-right: .2rem solid rgba($color-blue-dark-2, .8);
+      box-shadow: .1rem 0 rgba($color-grey-dark-3, .4);
+
+      @include respond (big-tab-land) {
+        border: none;
+        box-shadow: none;
+
+        border-bottom: 1rem dotted rgba($color-blue-dark-2, .2);
+        width: 40vw;
+        padding-bottom: 3rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+    @include respond (big-tab-land) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;  
+    }
+  }
+
+  &__container {
+    // position: relative;
+    display: flex;
+  
+    flex-direction: column;
+    align-items: center;
+  
+    width: 30rem;
+    padding: 2rem 0;
+    // border: 1px solid black;
+  
+  }
+
+  &__circular-progress {
+    position: relative;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.circle-1 {
+      background: conic-gradient($color-green-simple-2 240deg, #ededed 0deg);
+    }
+
+    &.circle-2 {
+      background: conic-gradient($color-orange-dark-1 213deg, #ededed 0deg);
+    }
+
+    &.circle-3 {
+      background: conic-gradient($color-purple-light-1 226deg, #ededed 0deg);
+    }
+
+  }
+  
+  &__circular-progress::before {
+    content: "";
+    position: absolute;
+    height: 16rem;
+    width: 16rem;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  
+  &__progress-value {
+    position: relative;
+  
+    color: $color-blue-dark-1;
+    font-size: 4rem;
+    font-weight: 600;
+  
+  }
+
+  &__skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include respond (big-tab-land) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    margin: 4rem 2rem;
+  }
+
+
+
+  &__item {
+    margin: 3rem 0;
+    
+  }
+
+  &__value {
+    display: inline-block;
+    color: $color-purple-light-1;
+  }
+
+  // *** ** * Back empty span * ** ***
+  &__bar {
+    background-color: rgba($color-green-dark-2, .8); //#3d564a;
+    display: block;
+    width: 50rem;
+    height: 1.1rem;
+
+    & span {
+      height: 1.1rem;
+      float: left;
+      background: $color-blue-light-2;
+
+    }
+
+    @include respond (big-tab-land) {
+      width: 60vw;
+    }
+
+    @include respond (tab-land) {
+      width: 80vw;
+    }
+  }
+
+  &__sum-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 30%;
+
+    
+    font-size: 3rem;
+    font-weight: 700;
+
+    & :first-child {
+      text-transform: uppercase;
+    }
+
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    list-style: none;
+    margin: 0 5rem;
+
+    height: 80vh;
+
+  }
+
+  // *** ** * front fill span * ** ***
+
+  &__html {
+    width: 90%;
+  }
+  &__css {
+    width: 80%;
+  }
+  &__bootstrap {
+    width: 70%;
+  }
+  &__javascript {
+    width: 60%;
+  }
+  &__dom {
+    width: 55%;
+  }
+  &__jquery {
+    width: 45%;
+  }
+
+  &__node {
+    width: 70%;
+  }
+  &__api {
+    width: 60%;
+  }
+  &__git {
+    width: 65%;
+  }
+  &__ejs {
+    width: 75%;
+  }
+  &__db {
+    width: 50%;
+  }
+  &__auth {
+    width: 40%;
+  }
+  &__react {
+    width: 55%;
+  }
+}
+
