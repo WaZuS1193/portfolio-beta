@@ -1,0 +1,148 @@
+/* ************ ******* *** Resume Section *** ******* ************ */
+/* ************ ******* *** Resume Body Section *** ******* ************ */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  background-color: #b5bcca;
+  overflow-x: hidden;
+  box-sizing: border-box;
+
+}
+
+i {
+  text-decoration: none;
+}
+
+.back-btn {
+  position: fixed;
+  color: #0088ff;
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin: 1rem auto auto 10%;
+}
+
+.back-btn:hover {
+  color: #523df5;
+}
+
+/* ************ ******* *** Resume Header Section *** ******* ************ */
+
+header {
+  padding: .2% 25%;
+  
+}
+
+.photo-sec {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.cvphoto {
+  width: 20rem;
+  height: 20rem;
+
+  background-color:  #3881c1;
+
+  margin: 1rem 10rem 0 1rem;
+
+  float: left;
+}
+
+.border-img1 {
+  position: absolute;
+  float: left;
+
+  background-color: #ccd4e4;
+  width: 18rem;
+  height: 18rem;
+  z-index: -1;
+
+}
+
+.border-img2 {
+  position: absolute;
+  float: left;
+
+  background-color: #6c6f74;
+  width: 18rem;
+  height: 18rem;
+
+  margin-top: 4rem;
+  margin-left: 4rem;
+  z-index: -2;
+
+}
+
+.basic-info {
+  line-height: 1.35;
+}
+
+.basic-info h1 {
+  color: #0088ff;
+}
+
+.basic-info a {
+  color: #3d68f5;
+  text-decoration: none;
+}
+
+.basic-info .mailbox:hover {
+  color: #523df5;
+  text-decoration: underline;
+}
+
+.basic-info p {
+  color: #3d68f5;
+}
+
+/* ************ ******* *** Resume Table Section *** ******* ************ */
+
+section {
+  padding: .2% 25%;
+}
+
+.table td {
+  border: 1px solid;
+  padding: 1rem;
+}
+
+.table_02 ul {
+  list-style-type: none;
+}
+
+.table em {
+  background-color: #6dc84b;
+  border-radius: .5rem .9rem .5rem .9rem;
+  -webkit-border-radius: .5rem .9rem .5rem .9rem;
+  -moz-border-radius: .5rem .9rem .5rem .9rem;
+  -ms-border-radius: .5rem .9rem .5rem .9rem;
+  -o-border-radius: .5rem .9rem .5rem .9rem;
+}
+
+.heading {
+  color: #48a0f4;
+  background-color:#ccd4e4;
+  padding: .5rem;
+  border-radius: .3rem .9rem .3rem .9rem;
+  -webkit-border-radius: .3rem .9rem .3rem .9rem;
+  -moz-border-radius: .3rem .9rem .3rem .9rem;
+  -ms-border-radius: .3rem .9rem .3rem .9rem;
+  -o-border-radius: .3rem .9rem .3rem .9rem;
+}
+
+.big {
+  text-transform: uppercase;
+}
